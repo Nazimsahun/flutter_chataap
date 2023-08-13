@@ -26,6 +26,9 @@ class DatabaseService {
     return snapshot;
   }
 
+  getUserGroups() async {
+    return userCollection.doc(uid).snapshots();
+  }
 }
 
 
